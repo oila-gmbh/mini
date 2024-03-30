@@ -6,4 +6,10 @@ class Mini {
       await MiniPlatform.instance.toPreviousApp();
     } catch (_) {}
   }
+
+  static saveLastBundleId() {
+    try {
+      MiniPlatform.instance.saveLastBundleId();
+    } catch (_) {}
+  }
 }

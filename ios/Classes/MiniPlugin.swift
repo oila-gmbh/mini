@@ -10,6 +10,8 @@ public class MiniPlugin: NSObject, FlutterPlugin {
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     switch call.method {
+    case "saveLastBundleId":
+      sharedDefaults?.set(bundleId, forKey: "last_app_bundle_id")
     case "toPreviousApp":
       self.toPreviousApp()
 //      result("iOS " + UIDevice.current.systemVersion)
