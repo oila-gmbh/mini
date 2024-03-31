@@ -30,7 +30,6 @@ class MiniPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
         activity?.moveTaskToBack(true)
 //      result.success("Android ${android.os.Build.VERSION.RELEASE}")
       }
-      "saveLastBundleId" -> {}
       else -> {
         result.notImplemented()
       }

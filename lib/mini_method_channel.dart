@@ -13,9 +13,4 @@ class MethodChannelMini extends MiniPlatform {
   void toPreviousApp() async {
     await methodChannel.invokeMethod<String>('toPreviousApp');
   }
-
-  @override
-  void saveLastBundleId() {
-    methodChannel.invokeMethod<String>('saveLastBundleId');
-  }
 }

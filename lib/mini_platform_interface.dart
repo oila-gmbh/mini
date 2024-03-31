@@ -26,8 +26,4 @@ abstract class MiniPlatform extends PlatformInterface {
   toPreviousApp() {
     throw UnimplementedError('toPreviousApp() has not been implemented.');
   }
-
-  saveLastBundleId() {
-    throw UnimplementedError('saveLastBundleId() has not been implemented.');
-  }
 }
